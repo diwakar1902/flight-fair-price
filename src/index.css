@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-bg: #f1eefb;
+  --color-card: #ffffff;
+  --color-card-2: #f6f4fc;
+  --color-line: #e3ddf4;
+  --color-ink: #211a35;
+  --color-mist: #756e93;
+  --color-fog: #493f66;
+
+  --color-teal: #0e9594;
+  --color-teal-dark: #0a6f6e;
+  --color-plum: #6c4fc4;
+  --color-plum-dark: #4f379a;
+  --color-coral: #ff6f71;
+  --color-coral-dark: #e14d5a;
+  --color-mustard: #f2ab27;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(50rem 28rem at 12% -8%, rgba(14, 149, 148, 0.16), transparent 60%),
+    radial-gradient(46rem 26rem at 105% 8%, rgba(108, 79, 196, 0.18), transparent 60%),
+    radial-gradient(40rem 24rem at 50% 115%, rgba(255, 111, 113, 0.1), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::selection {
+  background: var(--color-mustard);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
